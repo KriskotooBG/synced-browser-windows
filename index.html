@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synced windows</title>
+
+    <script src="main.mjs" type="module" defer></script>
+
+    <style>
+        #html, body{
+            overflow: hidden;
+            width: 100vw;
+            height: 100vh;
+            padding: 0;
+            margin: 0;
+        }
+
+        #svgCanvas{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <video id="videoCanvas" autoplay="true"></video>
+    <svg id="svgCanvas" version="1.1" xmlns="http://www.w3.org/2000/svg"></svg>
+</body>
+</html>
